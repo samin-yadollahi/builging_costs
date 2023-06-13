@@ -12,7 +12,7 @@ class Cost(ABC):
         pass
 
 
-class Complex(Cost):
+class ComplexCost(Cost):
 
     def __init__(self, price):
         self.price = price
@@ -21,7 +21,7 @@ class Complex(Cost):
         return(f"the Complex cost is, {self.price}")
 
 
-class Block(Cost):
+class BlockCost(Cost):
 
     def __init__(self, price):
         self.price = price
@@ -30,7 +30,7 @@ class Block(Cost):
         return(f"the Block cost is, {self.price}")
 
 
-class Floor(Cost):
+class FloorCost(Cost):
 
     def __init__(self, price):
         self.price = price
@@ -39,7 +39,7 @@ class Floor(Cost):
         return(f"the Floor cost is, {self.price}")
 
 
-class Unit(Cost):
+class UnitCost(Cost):
 
     def __init__(self, price):
         self.price = price

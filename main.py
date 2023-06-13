@@ -12,25 +12,25 @@ user_title_input = int(input("Enter the option's code: \n"))
 
 if (user_title_input == 1):
     
-    price = Complex(user_price_input)
+    price = ComplexCost(user_price_input)
     print(price.show_the_object())
 
 
 elif (user_title_input == 2):
     
-    price = Block(user_price_input)
+    price = BlockCost(user_price_input)
     print(price.show_the_object())
 
 
 elif (user_title_input == 3):
     
-    price = Floor(user_price_input)
+    price = FloorCost(user_price_input)
     print(price.show_the_object())
 
 
 elif (user_title_input == 4):
     
-    price = Unit(user_price_input)
+    price = UnitCost(user_price_input)
     print(price.show_the_object())
 
 else:
